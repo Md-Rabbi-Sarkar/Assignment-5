@@ -1,9 +1,9 @@
 function add(id) {
-  document.getElementById(id).classList.remove("hidden");
+  document.getElementById(id).classList.remove("hidden","lg:hidden");
 }
 
 function remove(id) {
-  document.getElementById(id).classList.add("hidden");
+  document.getElementById(id).classList.add("hidden","lg:hidden");
 }
 function hover(id) {
   document.getElementById(id).classList.add("bg-lime-400");
@@ -17,6 +17,6 @@ function amount(id) {
   return inputValue;
 }
 function mainAmaount (id){
- const mainBalance = document.getElementById(id).innerText
+ const mainBalance = document.getElementById(id).innerText;
     return mainBalance;
 } 

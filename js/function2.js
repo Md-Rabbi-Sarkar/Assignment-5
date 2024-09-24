@@ -3,8 +3,9 @@ document.getElementById('history').addEventListener('click',function(){
     remove('feni');
     remove('quota');
     hover('history');
-    hoverRemove('donate')
+    hoverRemove('donate');
 })
+
 document.getElementById('donate').addEventListener('click',function(){
     add('noakhali');
     add('feni');
