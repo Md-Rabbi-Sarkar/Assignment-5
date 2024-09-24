@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="flex justify-around bg-rose-50 items-center p-6">
+        <div class="bg-lime-500 rounded p-2">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="flex items-center gap-2">
+          <img src="./assets/logo.png" alt="" />
+          <span> Donate Bangladesh </span>
+        </div>
+        <div class="flex gap-2">
+          <img src="./assets/coin.png" alt="" />
+          <span> 5500 BDT </span>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div>
+        <div class="mb-6">
+          <span>Important FAQ </span>
+          <i class="fa-regular fa-circle-question"></i>
+        </div>
+        <div>
+          <h1 id="question-1" class="border text-2xl">
+            What is the Document Object Model(DOM)?<br /><span
+              id="answer-1"
+              class="hidden text-lg"
+              >The Document Object Model (DOM) is a programming interface for
+              web documents. It represents the structure of a document (like
+              HTML or XML) as a tree of objects, allowing scripts (usually
+              JavaScript) to manipulate the content, structure, and style of a
+              webpage dynamically.</span
+            >
+          </h1>
+          <h1 id="question-2" class="border text-2xl">
+            How do you select an element from the DOM?<br /><span
+              id="answer-2"
+              class="hidden text-lg"
+              >getElementById: Selects an element by its unique
+              ID.getElementsByClassName: Selects all elements with a specific
+              class name. This returns a live HTMLCollection.querySelector:
+              Selects the first element that matches a specified CSS
+              selector.querySelectorAll: Selects all elements that match a
+              specified CSS selector. This returns a static NodeList.</span
+            >
+          </h1>
+          <h1 id="question-3" class="border text-2xl">
+            What is event delegation in the context ot the DOM, and why is it
+            useful?<br /><span id="answer-3" class="hidden text-lg"
+              >Event delegation is a technique in the DOM where a single event
+              listener is attached to a parent element instead of adding
+              individual listeners to multiple child elements. This listener
+              handles events for all child elements, even those added
+              dynamically later.</span
+            >
+          </h1>
+          <h1 id="question-4" class="border text-2xl">
+            How do you manipulate an elment's Attributes and styles using the
+            DOM?<br /><span id="answer-4" class="hidden text-lg"
+              >Manipulating Attributes Get Attribute: Use
+              getAttribute('attributeName') to retrieve an attribute's value.
+              Set Attribute: Use setAttribute('attributeName', 'value') to set
+              or update an attribute. Remove Attribute: Use
+              removeAttribute('attributeName') to delete an attribute. Access
+              Properties: Some attributes can be accessed directly as properties
+              (e.g., element.id, element.className). Manipulating Styles Inline
+              Styles: Use element.style.property = 'value' to set individual CSS
+              styles (e.g., element.style.color = 'red'). Multiple Styles: Use
+              element.style.cssText = 'property: value;' to apply multiple
+              styles at once. Class Management: Use element.classList to add,
+              remove, or toggle classes (e.g.,
+              element.classList.add('active')).</span
+            >
+          </h1>
+        </div>
+      </div>
+    </section>
+    <script src="js/function.js"></script>
+    <script src="js/share.js"></script>
+  </body>
+</html>
